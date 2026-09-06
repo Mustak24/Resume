@@ -3,93 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Statements of Account - Vyapar Drishti</title>
+    <title>Mustak Resume</title>
     <!-- Classic & Modern Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        * {
-            box-sizing: border-box !important;
-        }
+    <link rel="stylesheet" href="style.css" >
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-        body {
-            padding: 0 !important;
-            margin: 0 !important;
-            font-family: 'Inter', sans-serif !important;
-            font-size: 12px;
-            color: #334155;
-            background-color: #ffffff;
-            -webkit-font-smoothing: antialiased;
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
-        }
-
-        .page {
-            width: 190mm;
-            height: 277mm;
-        }
-
-        @media print {
-            body {
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-
-            .no-print {
-                display: none !important;
-            }
-
-            .page-break {
-                page-break-before: always;
-            }
-        }
-    </style>
 </head>
 
-<body class="flex flex-col items-center m-0 p-0">
-    <div class="page p-[1mm]" >
-        <div class="border w-full h-full border-black p-[6mm] flex flex-col justify-center" >
-            <div class="flex flex-col items-center gap-2" >
-                <h1 class="text-4xl font-bold text-gray-800" style="font-family: 'Playfair Display', serif;" >Mustak Khan</h1>
-                <div class="flex items-center gap-4" >
+<body>
+    <div class="resume-page" >
+        <div class="resume-content" >
+            <div class="header" >
+                <h1 class="resume-name" >Mustak Khan</h1>
+                <div class="contact-details" >
                     <p>Udaipur, Rajsathan</p>
-                    <hr class="h-[12px] border-l border-l-black" >
+                    <hr class="separator" >
                     <p>+91 9772079668</p>
-                    <hr class="h-[12px] border-l border-l-black" >
+                    <hr class="separator" >
                     <p>mustak.coc786@gmail.com</p>
                 </div>
             </div>
 
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mt-4" style="font-family: 'Playfair Display', serif;" >
+            <div class="section">
+                <h1 class="section-title" >
                     Summary
                 </h1>
-                <p class="text-pretty text-justify" >
+                <p class="summary" >
                     Full-Stack and Mobile Developer pursuing B.Tech in Computer Science (2023–2027) with hands-on experience building production web platforms and deployed React Native applications. Proven track record in developing full-stack architectures (React, Next.js, Node.js, MongoDB) and delivering high-performance UI systems. GDSC Code Battle winner with multiple shipped mobile and web products.
                 </p>
 
-                <div class="flex items-center gap-2 mt-2" >
-                    <a href="https://mustak24.netlify.app" target="_blank" rel="noopener noreferrer" class="text-black underline" >
+                <div class="profile-links" >
+                    <a href="https://mustak24.netlify.app" target="_blank" rel="noopener noreferrer" >
                         Portfolio: mustak24.netlify.app
                     </a>
-                    <hr class="h-[12px] border-l border-l-black" >
-                    <a href="https://github.com/mustak24" target="_blank" rel="noopener noreferrer" class="text-black underline" >
+                    <hr class="separator" >
+                    <a href="https://github.com/mustak24" target="_blank" rel="noopener noreferrer" >
                         GitHub: github.com/Mustak24
                     </a>
-                    <hr class="h-[12px] border-l border-l-black" >
-                    <a href="https://linkedin.com/in/mustak24" target="_blank" rel="noopener noreferrer" class="text-black underline" >
+                    <hr class="separator" >
+                    <a href="https://linkedin.com/in/mustak24" target="_blank" rel="noopener noreferrer" >
                         LinkedIn: linkedin.com/in/mustak24
                     </a>
                 </div>
             </div>
             
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mt-4" style="font-family: 'Playfair Display', serif;" >
+            <div class="section">
+                <h1 class="section-title" >
                     Technical Skills
                 </h1>
-                <ul class="list-disc list-inside mt-2 pl-4" >
+                <ul class="skills-list" >
                     <li>
                         <span class="text-black" >
                             Languages: 
@@ -120,20 +86,20 @@
                 </ul>
             </div>
             
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mt-4" style="font-family: 'Playfair Display', serif;" >
+            <div class="section">
+                <h1 class="section-title" >
                     Experience
                 </h1>
 
-                <div class="mt-2" >
-                    <div class="flex items-center justify-between text-black font-semibold" >
+                <div class="experience-entry" >
+                    <div class="entry-heading" >
                         <p>
                             Software Development Engineer Intern ( OptiGrit )
                         </p>
                         <p>Sep 2025 – Aug 2026</p>
                     </div>
 
-                    <ul class="list-disc mt-1 pl-7 text-justify" >
+                    <ul class="experience-list" >
                         <li>
                             Architected and maintained modular, reusable UI components across core modules, cutting feature development cycle time by 30%.
                         </li>
@@ -149,19 +115,19 @@
                 </div>
             </div>
             
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mt-4" style="font-family: 'Playfair Display', serif;" >
+            <div class="section">
+                <h1 class="section-title" >
                     Projects
                 </h1>
 
-                <div class="mt-2" >
-                    <div class="flex items-center justify-between text-black font-semibold" >
-                        <a href="https://vyapar-drishti.pixelpropx.in" target="_blank" rel="noopener noreferrer" class="text-black underline" >
+                <div class="project-entry" >
+                    <div class="entry-heading" >
+                        <a href="https://vyapar-drishti.pixelpropx.in" target="_blank" rel="noopener noreferrer" class="project-title" >
                             Vyapar Drishti: GST Invoicing & Inventory Platform
                         </a>
                     </div>
 
-                    <ul class="list-disc mt-1 pl-7 text-justify" >
+                    <ul class="project-list" >
                         <li>
                             Built a full-stack GST-compliant billing system enabling SMBs to generate real-time tax invoices and export records.
                         </li>
@@ -172,14 +138,14 @@
                     </ul>
                 </div>
                 
-                <div class="mt-2" >
-                    <div class="flex items-center justify-between text-black font-semibold" >
-                        <a href="https://play.google.com/store/apps/details?id=com.e_wallet.pixelProphet&hl=en_IN" target="_blank" rel="noopener noreferrer" class="text-black underline" >
+                <div class="project-entry" >
+                    <div class="entry-heading" >
+                        <a href="https://play.google.com/store/apps/details?id=com.e_wallet.pixelProphet&hl=en_IN" target="_blank" rel="noopener noreferrer" class="project-title" >
                             PixelWallet: Personal Finance Mobile App
                         </a>
                     </div>
 
-                    <ul class="list-disc mt-1 pl-7 text-justify" >
+                    <ul class="project-list" >
                         <li>
                             Engineered a cross-platform personal finance tracker and deployed the production release to the Google Play Store.
                         </li>
@@ -191,13 +157,13 @@
                 </div>
             </div>
 
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mt-4" style="font-family: 'Playfair Display', serif;" >
+            <div class="section">
+                <h1 class="section-title" >
                     Education
                 </h1>
 
-                <div class="mt-2" >
-                    <div class="flex items-center justify-between text-black font-semibold" >
+                <div class="education-entry" >
+                    <div class="entry-heading" >
                         <p>
                             Bachelor of Technology (B.Tech) in Computer Science & Engineering
                         </p>
@@ -208,12 +174,12 @@
                 </div>
             </div>
 
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mt-4" style="font-family: 'Playfair Display', serif;" >
+            <div class="section">
+                <h1 class="section-title" >
                     Achievements & Certification
                 </h1>
 
-                <ul class="list-disc mt-1 pl-7" >
+                <ul class="achievement-list" >
                     <li>
                         <span class="text-black" >
                             1st Place Winner:
@@ -243,6 +209,30 @@
             </div>
         </div>
     </div>
-</body>
 
+    <script>
+        const query = new URLSearchParams(window.location.search);
+        const downloadMode = query.has('download');
+
+        if(downloadMode) {
+            downloadPDF();
+        }
+
+        async function downloadPDF() {
+            await document.fonts.ready;
+
+            const element = document.querySelector('.resume-page');
+            const options = {
+                margin: 0,
+                filename: 'Mustak-Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'in', format: 'A4', orientation: 'portrait' },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+            };
+
+            await html2pdf().set(options).from(element).save();
+        }
+    </script>
+</body>
 </html>

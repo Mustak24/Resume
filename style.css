@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    color: #334155;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body,
+.resume-page,
+.resume-content,
+.header,
+.contact-details,
+.section,
+.section-title,
+.summary,
+.profile-links,
+.skills-list,
+.experience-entry,
+.project-entry,
+.education-entry,
+.achievement-list,
+h1,
+p,
+ul {
+    margin: 0;
+}
+
+.resume-page {
+    width: 204mm;
+    height: 296mm;
+    padding: 10mm;
+    overflow: hidden;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+.resume-content {
+    width: 100%;
+    height: 100%;
+    padding: 6mm;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header,
+.contact-details,
+.profile-links {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-details {
+    gap: 16px;
+}
+
+.contact-details p,
+.profile-links a {
+    white-space: nowrap;
+}
+
+.section-title {
+    margin-top: 16px;
+    color: #1f2937;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.resume-name {
+    color: #1f2937;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.summary,
+.experience-list,
+.project-list {
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.summary {
+    text-wrap: pretty;
+}
+
+.profile-links {
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.profile-links a,
+.project-title {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.skills-list,
+.achievement-list {
+    margin-top: 8px;
+    padding-left: 16px;
+}
+
+.experience-entry,
+.project-entry,
+.education-entry {
+    margin-top: 8px;
+}
+
+.entry-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-weight: 600;
+}
+
+.experience-list,
+.project-list,
+.achievement-list {
+    margin-top: 4px;
+    padding-left: 28px;
+    list-style-type: disc;
+}
+
+.achievement-list {
+    text-align: left;
+}
+
+.separator {
+    height: 12px;
+    border: 0;
+    border-left: 1px solid #000000;
+}
+
+.text-black {
+    color: #000000;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+}
